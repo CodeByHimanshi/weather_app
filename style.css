@@ -53,7 +53,7 @@ ul li {
 }
 
 .search-row {
-    display: inline-flex;
+    display: flex;
 }
 
 .search-row input[type="text"] {
@@ -64,7 +64,7 @@ ul li {
     box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
     color: #5c6771;
     position: relative;
-    width: 195px;
+    width: 85%;
 }
 
 .search-row input[type="text"]::placeholder {
@@ -118,6 +118,7 @@ ul li {
     text-align: center;
     border-bottom: 1px solid #9ad0ff;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .temp-num {
@@ -131,6 +132,8 @@ ul li {
     color: #fff;
     font-size: 32px;
     line-height: 1px;
+    position: relative;
+    top: -27px;
 }
 
 .wind {
@@ -241,4 +244,25 @@ ul li {
 
 .plr-20{
     padding: 0 25px;
+}
+
+@media (max-width:480px) {
+    .temp-num{
+        font-size: 60px;
+    }
+    .weather-img-box img {
+        width: 90px;
+    }
+    .for-break .col-sm-6{
+        width: 50%;
+    }
+    .humidity img{
+        width: 25px;
+    }
+    .wind img{
+        width: 25px;
+    }
+    .for-mob .col-sm-4{
+      width: 33.3%;  
+    }
 }
